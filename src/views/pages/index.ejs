@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css"
+    />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Đăng ký tài khoản CMS</h2>
+        <p>
+          Điền thông tin vào đây, sau đó, hệ thống sẽ sinh ngẫu nhiên một tài
+          khoản.
+        </p>
+        <form action="/" method="POST">
+          <input
+            type="text"
+            name="first_name"
+            placeholder="Họ và tên (đầy đủ)"
+            required
+          />
+          <input type="text" name="last_name" placeholder="Lớp" required />
+          <fieldset>
+            <label>
+              <input type="checkbox" role="switch" name="term_1" required />
+              Tôi đã điền thông tin chính xác bằng tiếng Việt có dấu.
+            </label>
+          </fieldset>
+          <fieldset>
+            <label>
+              <input type="checkbox" role="switch" name="term_2" required />
+              Tôi sẽ ghi nhớ thông tin đăng nhập và sẽ chỉ sử dụng duy nhất một
+              tài khoản.
+            </label>
+          </fieldset>
+          <button type="submit">Tạo tài khoản</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
